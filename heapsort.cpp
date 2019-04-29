@@ -37,7 +37,7 @@ void HeapSort(int *a, int size){
 		build_heap(a, i, size);
 	}
 	print(a, size);
-	for(int i = size-1; i > 0; --i){
+	for(int i = size-1; i>0; --i){
 		swap(a[0], a[i]);
 		build_heap(a, 0, i);
 		print(a, size);
@@ -45,8 +45,8 @@ void HeapSort(int *a, int size){
 }
 
 int main(){
-	int a[] = {13, 14, 94, 33, 82, 25, 59, 94, 65, 23, 45, 27, 73, 25, 39, 10};
-	//int a[]={15, 9, 8, 1, 4, 11, 7, 12, 13, 6, 5, 3, 16, 2, 10, 14};
+	//int a[] = {13, 14, 94, 33, 82, 25, 59, 94, 65, 23, 45, 27, 73, 25, 39, 10};
+	int a[]={15, 9, 8, 1, 4, 11, 7, 12, 13, 6, 5, 3, 16, 2, 10, 14};
 	//int a[]={1, 12, 5, 26, 7, 14, 3, 7, 2};
 	//int a[]={7, 7, 5, 1, 3, 2};
 	const size_t sz = sizeof(a)/sizeof(a[0]);
