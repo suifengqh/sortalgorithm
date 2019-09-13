@@ -33,7 +33,7 @@ void HeapSort(int *a, int size){
 	if(!a || size <= 0){
 		return;
 	}
-	for(int i = size/2; i>=0; --i){//对于下标从0开始的数组，非叶节点从size/2开始
+	for(int i = size/2-1; i>=0; --i){//对于下标从0开始的数组，非叶节点从size/2-1开始
 		build_heap(a, i, size);
 	}
 	print(a, size);
