@@ -14,7 +14,7 @@ void swap(int& a, int& b){
 }
 void build_heap(int *a, int k, int size){
 	while(2*k+1 < size){
-		//对于下标从0开始的数组，左儿子下标为2k+1,右儿子下标为2k+1
+		//对于下标从0开始的数组，左儿子下标为2k+1,右儿子下标为2k+2
 		int child = 2*k+1;
 		if(child+1 < size && a[child+1] > a[child]){
 			++child;
